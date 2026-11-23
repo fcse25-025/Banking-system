@@ -1,10 +1,10 @@
-package banking.model
+package banking.model;
 public class ChequeAccount extends Account{
 private String company;
 private String companyAddress;
 
-public ChequeAccount(String accountNumber,double balance,String branch,String accountType,String status,String company,String companyAddress){
-     super(accountNumber,balance,branch,accountType,status);
+public ChequeAccount(int customerID,String accountNumber,double balance,String branch,String accountType,String status,String company,String companyAddress){
+     super(customerID,accountNumber,balance,branch,accountType,status);
      this.company=company;
      this.companyAddress=companyAddress;
 }
@@ -18,7 +18,7 @@ public String getCompanyAddress(){
     return companyAddress;
 }
 public void setCompanyAddress(String companyAddress){
-    this.companyAddress=companyAddress
+    this.companyAddress=companyAddress;
 }
 
 }

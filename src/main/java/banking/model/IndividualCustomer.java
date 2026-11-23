@@ -1,4 +1,4 @@
-package banking.model
+package banking.model;
 public class IndividualCustomer extends Customer{
 
     private String firstName;

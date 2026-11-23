@@ -1,4 +1,4 @@
-package banking.model
+package banking.model;
 public class BankEmployee{
     private int employeeID;
     private String firstName;

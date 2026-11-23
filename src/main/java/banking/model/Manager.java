@@ -1,4 +1,4 @@
-package banking.madel
+package banking.model;
 public class Manager{
     private int managerID;
     private String firstName;
@@ -14,7 +14,7 @@ public class Manager{
     public int getManagerID(){
         return managerID;
     }
-    public void setManagerID(String managerID){
+    public void setManagerID(int managerID){
         this.managerID=managerID;
     }
     public String getFirstName(){

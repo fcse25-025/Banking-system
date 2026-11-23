@@ -1,19 +1,27 @@
 package banking.model;
-public abstract class account{
+public abstract class Account{
+    private int customerID;
     private String accountNumber;
     private double balance;
     private String branch;
     private String accountType;
     private String status;
 
-    public Account(String accountNumber,double balance,String branch,String accountType,String status){
+    public Account(int customerID,  String accountNumber,double balance,String branch,String accountType,String status){
+        this.customerID=customerID;
         this.accountNumber=accountNumber;
         this.balance=balance;
         this.branch=branch;
         this.accountType=accountType;
         this.status=status;
     }
-  public String getAccountNumber(){
+
+    public int getCustomerID() {
+        return customerID;
+    }
+
+
+    public String getAccountNumber(){
     return accountNumber;
   }
   public double getBalance(){
@@ -28,7 +36,12 @@ public abstract class account{
   public String getStatus(){
     return status;
   }
-  public void setAccountNumber(String accountNumber){
+
+    public void setCustomerID(int customerID) {
+        this.customerID = customerID;
+    }
+
+    public void setAccountNumber(String accountNumber){
     this.accountNumber=accountNumber;
   }
   public void setBalance(double balance){

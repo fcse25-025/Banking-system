@@ -1,4 +1,4 @@
-package banking.model
+package banking.model;
 public class Bank{
     private int bankID;
     private String name;
@@ -9,13 +9,13 @@ public class Bank{
         this.bankID=bankID;
         this.name=name;
         this.branch=branch;
-        this.address=address
+        this.address=address;
     }
     
     public int getBankID(){
         return bankID;
     }
-    public void setBankID(String bankID){
+    public void setBankID(int bankID){
         this.bankID=bankID;
     }
     public String  getName(){

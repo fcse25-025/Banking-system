@@ -1,9 +1,9 @@
-package banking.model
+package banking.model;
 public class SavingsAccount extends Account implements InterestBearing{
     private double interestRate;
 
-    public SavingsAccount(String accountNumber,double balance,String branch,String accountType,String status,double interestRate){
-        super(accountNumber,balance,branch,accountType,status);
+    public SavingsAccount(int customerID,String accountNumber,double balance,String branch,String accountType,String status,double interestRate){
+        super(customerID,accountNumber,balance,branch,accountType,status);
 
         this.interestRate=interestRate;
     }
@@ -15,7 +15,7 @@ public class SavingsAccount extends Account implements InterestBearing{
     }
     @Override
     public double calculateInterest(){
-        return 0.0
+        return 0.0;
     }
     @Override
     public void addInterest(){

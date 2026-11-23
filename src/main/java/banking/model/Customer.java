@@ -1,6 +1,6 @@
 package banking.model;
-public abstract class customer{
-    private int customerID:
+public abstract class Customer{
+    private int customerID;
     private String address;
     private String  phoneNumber;
     private String email;
@@ -24,8 +24,8 @@ public String getPhoneNumber(){
 public String getEmail(){
     return email;
 }
-public void setCustomerID(String customerID){
-    this.customerID=customerID; 
+public void setCustomerID(int customerID){
+    this.customerID =  customerID;
 }
 public void setAddress(String address){
     this.address=address;

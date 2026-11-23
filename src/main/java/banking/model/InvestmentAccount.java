@@ -1,12 +1,12 @@
-package banking.model
+package banking.model;
 public class InvestmentAccount extends Account implements InterestBearing{
     private double interestRate;
-    private double minimumInitialDeposite;
+    private double minimumInitialDeposit;
 
-    public InvestmentAccount(String accountNumber,double balance,String branch,String accountType,String status,double interestRate,double minimumInitialDeposite){
-         super(accountNumber,balance,branch,accountType,status);
+    public InvestmentAccount(int customerID,String accountNumber,double balance,String branch,String accountType,String status,double interestRate,double minimumInitialDeposit){
+         super(customerID,accountNumber,balance,branch,accountType,status);
          this.interestRate=interestRate;
-         this.minimumInitialDeposite-minimumInitialDeposite;
+         this.minimumInitialDeposit=minimumInitialDeposit;
 
     }
 
@@ -19,15 +19,15 @@ public class InvestmentAccount extends Account implements InterestBearing{
     }
 
     public double getMinimumInitialDeposit(){
-        return minimumInitialDeposite;
+        return minimumInitialDeposit;
     }
 
     public void setMinimumInitialDeposit(double minimumInitialDeposite){
-        this.minimumInitialDeposite=minimumInitialDeposite;
+        this.minimumInitialDeposit=minimumInitialDeposite;
     }
     @Override
     public double calculateInterest(){
-        return 0.0
+        return 0.0;
     }
     @Override
     public void addInterest(){

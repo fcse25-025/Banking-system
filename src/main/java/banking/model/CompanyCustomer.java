@@ -1,4 +1,4 @@
-package banking.model
+package banking.model;
 public class CompanyCustomer extends Customer{
     private String companyName;
     private String registrationNumber;

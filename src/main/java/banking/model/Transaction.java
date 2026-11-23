@@ -1,12 +1,18 @@
-package banking.model
+package banking.model;
+
+import java.util.Date;
+
 public class Transaction{
     private int transactionID;
+    private  String accountNumber;
     private Date transactionDate;
     private double amount;
     private String transactionType;
 
-    public Transaction(int transactionID,Date transactionDate,double amount,String transactionType){
+
+    public Transaction(int transactionID,String accountNumber, Date transactionDate, double amount, String transactionType){
         this.transactionID=transactionID;
+        this.accountNumber=accountNumber;
         this.transactionDate=transactionDate;
         this.amount=amount;
         this.transactionType=transactionType;
@@ -34,5 +40,11 @@ public class Transaction{
     }
     public void setTransactionType(String transactionType){
         this.transactionType=transactionType;
+    }
+    public  String getAccountNumber(){
+        return  accountNumber;
+    }
+    public void setAccountNumber(String accountNumber){
+        this.accountNumber=accountNumber;
     }
 }
